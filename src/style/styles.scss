@@ -1,0 +1,11 @@
+// Test
+
+$primary: #3498db;
+
+body {
+  font-family: sans-serif;
+  background: #f9f9f9;
+  h1 {
+    color: $primary;
+  }
+}

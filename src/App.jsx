@@ -1,7 +1,7 @@
 import { Routes, Route, Link } from "react-router-dom";
-import Home from "./pages/Home.jsx";
-import About from "./pages/About.jsx";
-import ErrorPage from "./pages/Error.jsx";
+import Home from "./components/pages/Home.jsx";
+import About from "./components/pages/About.jsx";
+import ErrorPage from "./components/pages/Error.jsx";
 
 export default function App() {
   return (

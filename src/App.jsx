@@ -15,6 +15,7 @@ export default function App() {
           <Route path="*" element={<ErrorPage />} />
         </Routes>
       </main>
+      <About />
     </div>
   );
 }

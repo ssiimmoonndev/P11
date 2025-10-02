@@ -6,7 +6,7 @@ export default function Home() {
     <main>
       <div className="image-source">
         <div className="overlay"></div>
-        <p className="title-main">Chez vous et partout ailleurs</p>
+        <p className="title-main">Chez vous, partout et ailleurs</p>
       </div>
     </main>
   </div>

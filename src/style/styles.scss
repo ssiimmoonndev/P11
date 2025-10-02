@@ -3,11 +3,18 @@ $primary: #FF6060;
 
 body {
   margin: 0;
-  font-family: sans-serif;
+  width: auto;
+  font-family: "Montserrat", sans-serif;
   background: #f9f9f9;
   h1 {
     color: $primary;
   }
+}
+
+.body-style {
+  max-width: 80%;
+  padding: 16px;
+  margin: 0 auto;
 }
 
 header , img {

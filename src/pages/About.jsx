@@ -2,8 +2,8 @@ import "../style/about.scss"
 
 export default function About() {
   return (
-    <div>
+    <main>
       <h1>TEST</h1>
-    </div>
+    </main>
   )
 }

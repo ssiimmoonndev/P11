@@ -2,13 +2,14 @@ import "../style/home.scss"
 
 export default function Home() {
   return (
-  <div>
-    <main>
+    <main className="body-style">
       <div className="image-source">
-        <div className="overlay"></div>
-        <p className="title-main">Chez vous, partout et ailleurs</p>
+        <div className="overlay"/>
+        <div className="title-main">Chez vous, partout et ailleurs</div>
       </div>
+      <section className="gallery">
+          
+      </section>
     </main>
-  </div>
   )
 }

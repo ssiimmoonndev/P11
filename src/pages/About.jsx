@@ -2,8 +2,13 @@ import "../style/about.scss"
 
 export default function About() {
   return (
-    <main>
-      <h1>TEST</h1>
-    </main>
+    <div>
+      <div className="body-style">
+        <div className="image-about" />
+        <section className="dropdown-section">
+          
+        </section>
+      </div>
+    </div>
   )
 }

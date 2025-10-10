@@ -1,5 +1,5 @@
-import "../style/home.scss"
 import locationsData from "../data/logement.json";
+import Card from "../components/Card.jsx";
 
 export default function Home() {
   return (
@@ -10,15 +10,12 @@ export default function Home() {
       </div>
       <section className="gallery">
         {locationsData.map((location) => (
-          // Balise <a> pour que la carte soit cliquable
-          <a 
-            key={location.id} 
-            className="location-card"
-          >
-            <img src={location.cover} alt={location.title} className="card-image" />
-            <div className="card-gradient"></div>
-            <span className="card-title">{location.title}</span>
-          </a>
+          <Card
+          key={location.id}
+          id={location.id}
+          title={location.title}
+          cover={location.cover}
+          />
         ))}
       </section>
     </div>

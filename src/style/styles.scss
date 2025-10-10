@@ -1,10 +1,16 @@
-
-$primary: #FF6060;
+@import 'variables';
+@import 'header';
+@import 'home';
+@import 'about';
+@import 'error';
+// @import 'card';
+@import 'footer';
 
 body {
   margin: 0;
-  width: auto;
-  font-family: "Montserrat", sans-serif;
+  width: 100vw;
+  // max-width: 1240px;
+  font-family: $font-family-main;
   background: #f9f9f9;
   h1 {
     color: $primary;
@@ -13,16 +19,7 @@ body {
 
 .body-style {
   max-width: 80%;
-  padding: 16px;
+  padding: 1rem;
   margin: 0 auto;
-}
-
-header , img {
-  display: flex;
-  flex-direction: row;
-  justify-content: space-between;
-  align-self: center;
-  a:visited {
-    color: black;
-  }
+  gap: 1rem;
 }

@@ -1,5 +1,25 @@
 .error-style {
   display: flex;
   flex-direction: column;
-  align-items: center;
+  margin: 5rem;
+  gap: 5rem;
+}
+
+.oups {
+  display: flex;
+  justify-content: center;
+  text-align: center;
+  color: $primary;
+}
+
+.img-404 {
+  width: 100%;
+}
+
+.link-to-home {
+  display: flex;
+  justify-content: center;
+  a:visited {
+    color: black;
+  }
 }

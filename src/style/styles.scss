@@ -3,13 +3,11 @@
 @import 'home';
 @import 'about';
 @import 'error';
-// @import 'card';
 @import 'footer';
 
 body {
   margin: 0;
   width: 100vw;
-  // max-width: 1240px;
   font-family: $font-family-main;
   background: #f9f9f9;
   h1 {
@@ -22,4 +20,19 @@ body {
   padding: 1rem;
   margin: 0 auto;
   gap: 1rem;
+}
+
+@media (max-width: 768px) {
+  .body-style {
+    max-width: 100%;
+  }
+  .dropdown-section {
+    max-width: 100%;
+  }
+}
+
+@media (max-width: 350px) {
+  .body-style {
+    padding: 1rem 0;
+  }
 }

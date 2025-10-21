@@ -1,4 +1,6 @@
-export default function Card({id, title, cover}) {
+import { Link } from "react-router-dom";
+
+export default function Card({title, cover}) {
   return (
     <div className="location-card">
       <img src={cover} alt={title} className="card-image" />

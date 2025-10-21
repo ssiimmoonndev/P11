@@ -9,14 +9,17 @@ export default function Home() {
         <div className="title-main">Chez vous, partout et ailleurs</div>
       </div>
       <section className="gallery">
-        {locationsData.map((location) => (
+        {locationsData.map(location => {
+         return (
           <Card
-          key={location.id}
-          id={location.id}
-          title={location.title}
-          cover={location.cover}
+            key={location.id}
+            id={location.id}
+            title={location.title}
+            cover={location.cover}
           />
-        ))}
+         ) 
+        }
+        )}
       </section>
     </div>
   )

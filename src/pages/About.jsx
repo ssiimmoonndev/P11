@@ -13,13 +13,16 @@ export default function About() {
       <div className="body-style">
         <div className="image-about" />
         <section className="dropdown-section">
-          {aboutData.map((item, index) => (
-            <Dropdown
-            key={index}
-            title={item.title}
-            content={item.content}
-            />
-          ))}
+          {aboutData.map((item, index) => {
+            return (
+              <Dropdown
+                key={index}
+                title={item.title}
+                content={item.content}
+              />
+            )
+          }
+          )}
         </section>
       </div>
     </div>

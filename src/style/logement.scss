@@ -1,0 +1,109 @@
+@import "./variables"; 
+
+.logement-page {
+    width: 90%;
+    margin: 0 auto 50px;
+    max-width: 1240px; 
+
+    .logement-header {
+        display: flex;
+        justify-content: space-between;
+        margin-top: 30px;
+        color: #FF6060; 
+
+        .logement-info {
+            h1 {
+                font-size: 36px;
+                font-weight: 500;
+                margin-bottom: 5px;
+            }
+            .location {
+                font-size: 18px;
+                margin-bottom: 20px;
+                color: black; // Ou ta variable couleur secondaire
+            }
+            .tags-container {
+                display: flex;
+                gap: 10px;
+                flex-wrap: wrap;
+
+                .tag {
+                    background-color: #FF6060;
+                    color: white;
+                    padding: 5px 25px;
+                    border-radius: 10px;
+                    font-size: 14px;
+                    font-weight: bold;
+                }
+            }
+        }
+
+        .logement-host-rating {
+            display: flex;
+            flex-direction: column;
+            justify-content: space-between;
+            align-items: flex-end; // Aligne tout à droite
+
+            .host-info {
+                display: flex;
+                align-items: center;
+                gap: 10px;
+
+                .host-name {
+                    display: flex;
+                    flex-direction: column;
+                    text-align: right;
+                    font-size: 18px;
+                    color: #FF6060;
+                    line-height: 1.2;
+                }
+
+                .host-picture {
+                    width: 64px;
+                    height: 64px;
+                    border-radius: 50%; // Pour faire le rond
+                    object-fit: cover;
+                    background-color: #ccc;
+                }
+            }
+
+            .rating {
+                display: flex;
+                gap: 5px;
+                
+                .star {
+                    font-size: 24px;
+                    &.active { color: #FF6060; }
+                    &.inactive { color: #E3E3E3; }
+                }
+            }
+        }
+    }
+
+    .logement-dropdowns {
+        display: grid;
+        grid-template-columns: 1fr 1fr; 
+        gap: 50px; 
+        margin-top: 30px;
+    }
+}
+
+
+@media (max-width: 768px) {
+    .logement-page .logement-header {
+        flex-direction: column; 
+        
+        .logement-host-rating {
+            flex-direction: row-reverse; 
+            justify-content: space-between;
+            align-items: center;
+            margin-top: 20px;
+            width: 100%;
+        }
+    }
+
+    .logement-page .logement-dropdowns {
+        grid-template-columns: 1fr; 
+        gap: 20px;
+    }
+}

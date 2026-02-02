@@ -3,7 +3,7 @@
   aspect-ratio: 5/1;
   border-radius: 20px;
   overflow: hidden;
-  background-image: url("./src/assets/image-home.png");
+  background-image: url("../src/assets/image-home.png");
   background-size: cover;
   background-position: center;
   background-repeat: no-repeat;
@@ -21,13 +21,6 @@
   background-color: rgb(0, 0, 0, 0.5);
 }
 
-// .title-main {
-  // position: relative;
-  // color: $text-color-light;
-//   font-size: $font-size-header;
-//   font-weight: bold;
-//   text-align: center;
-// }
 .title-main {
   position: relative;
   color: $text-color-light;
@@ -38,7 +31,6 @@
   align-items: center;
   font-size: 2rem;
   font-weight: bold;
-  // text-align: center;
 }
 
 .gallery {
@@ -52,6 +44,7 @@
 }
 
 .location-card {
+  text-decoration: none;
   display: flex;
   align-items: flex-end;
   position: relative;
@@ -86,15 +79,19 @@
 }
 
 .card-title {
+  text-shadow: 0 0 black;
   position: relative;
   z-index: 3;
   color: $text-color-light;
-  font-size: 1rem;
+  font-size: 1.2rem;
 }
 
 
 @media (max-width: 768px) {
   .image-source {
+    margin: 0 1rem;
+    padding: 1rem;
+    border-radius: 10px;
     justify-content: flex-start;
   }
   .title-main {
@@ -109,11 +106,13 @@
     background-color: transparent;
     padding: 1rem;
   }
+  .card-title {
+    font-size: 1rem;
+  }
 }
 
 @media (max-width:425px) {
   .title-main {
-    // width: 90%;
     font-size: 1rem;
   }
 

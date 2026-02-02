@@ -1,4 +1,4 @@
-header , img {
+header {
   display: flex;
   flex-direction: row;
   justify-content: space-between;
@@ -17,6 +17,15 @@ header , img {
   display: flex;
   align-items: center;
   gap: 1rem;
+  a {
+    text-decoration: none;
+    &:hover {
+      text-decoration: underline;
+    }
+    &.active-link {
+      text-decoration: underline;
+    }
+  }
 }
 
 @media (max-width: 768px) {

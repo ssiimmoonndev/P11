@@ -1,6 +1,7 @@
 import { Routes, Route } from "react-router-dom";
 import Header from "./components/Header.jsx";
 import Home from "./pages/Home.jsx";
+import LogementPage from "./pages/LogementPage.jsx"
 import ErrorPage from "./pages/Error.jsx";
 import Footer from "./components/Footer.jsx";
 import About from "./pages/About.jsx";
@@ -12,6 +13,7 @@ export default function App() {
       <Routes>
         <Route path="/" element={<Home />} />
         <Route path="/about" element={<About/>} />
+        <Route path="/location/:id" element={<LogementPage/>} />
         <Route path="*" element={<ErrorPage />} />
       </Routes>
       <Footer />

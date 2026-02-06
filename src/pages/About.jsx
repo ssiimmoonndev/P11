@@ -1,4 +1,5 @@
 import Dropdown from "../components/Dropdown.jsx"
+import imageAbout from "..assets/image-about.png"
 
 export default function About() {
 
@@ -11,7 +12,11 @@ export default function About() {
   return (
     <div>
       <div className="body-style">
-        <div className="image-about" />
+        {/* <div className="image-about" /> */}
+        <div 
+          className="image-about" 
+          style={{ backgroundImage: `url(${imageAbout})` }}
+        />
         <section className="dropdown-section">
           {aboutData.map((item, index) => {
             return (

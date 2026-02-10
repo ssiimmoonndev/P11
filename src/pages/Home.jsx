@@ -13,7 +13,7 @@ export default function Home() {
         {locationsData.map(location => {
          return (
           <Card
-            key={location.id}
+            // key={location.id}
             id={location.id}
             title={location.title}
             cover={location.cover}
